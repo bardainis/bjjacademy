@@ -925,6 +925,10 @@ ul.technique-videos>ul {
     text-decoration-thickness: 2px;
 }
 
+.modal {
+    background: var(--neutral-900) 0.7;
+}
+
 .free-session .modal-body {
     padding: 0;
 }
