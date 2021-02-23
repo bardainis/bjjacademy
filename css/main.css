@@ -912,7 +912,10 @@ ul.technique-videos>ul {
     padding: 0;
 }
 
-
+.free-session {
+    text-align: left;
+    color: white;
+}
 
 .application-form-header {
     color: white;
