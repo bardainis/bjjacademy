@@ -176,9 +176,19 @@ h2 {
 h3 {
     font-size: 40px;
     font-weight: 600;
-    font-style: normal;
     line-height: 71px;
 }
+
+/* Mobile */
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 4.5rem;
+        line-height: 4rem;
+    }
+
+}
+
 
 .lead {
     font-size: 21px;
@@ -573,6 +583,13 @@ p.schedule-time {
     margin-top: -140px;
 }
 
+@media (max-width: 576px) {
+    .group_photo {
+        visibility: hidden;
+    }
+
+}
+
 #about_us {
     background-color: #EDF2F8;
 }
@@ -912,6 +929,17 @@ ul.technique-videos>ul {
     padding: 0;
 }
 
+.free-session .modal-header {
+    border: none;
+    background-color: #123597;
+}
+
+.free-session {
+    text-align: left;
+    color: black;
+}
+
+
 .application-form-header {
     color: white;
     background-color: #123597;
@@ -926,16 +954,6 @@ ul.technique-videos>ul {
     margin-bottom: 2rem;
 }
 
-.free-session {
-    padding: 0;
-    text-align: left;
-    color:black;
-}
-
-.free-session .modal-header {
-    border: none;
-    background-color: #123597;
-}
 
 .btn-close {
     background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
