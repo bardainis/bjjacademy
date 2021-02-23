@@ -912,11 +912,6 @@ ul.technique-videos>ul {
     padding: 0;
 }
 
-.free-session {
-    text-align: left;
-    color: white;
-}
-
 .application-form-header {
     color: white;
     background-color: #123597;
@@ -934,7 +929,7 @@ ul.technique-videos>ul {
 .free-session {
     padding: 0;
     text-align: left;
-    color: black;
+    color:black;
 }
 
 .free-session .modal-header {
