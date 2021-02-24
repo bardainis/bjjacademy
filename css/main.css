@@ -42,6 +42,11 @@ html, body {
     color: #FF1C3A;
 }
 
+.py-10 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
 /* Navbar */
 
 .navbar {
@@ -72,14 +77,6 @@ html, body {
     display: inline;
     padding: 5px;
 }
-
-hr {
-    border: none;
-    border-top: 1px solid var(--neutral-700);
-    margin: 0;
-    margin: 2rem 0
-}
-
 
 @media (max-width: 991px) {
     .language_selection {
@@ -161,7 +158,7 @@ a.dropdown-item {
 /* Text Styles */
 
 h1 {
-    font-size: 80px;
+    font-size: 4.5rem;
     font-weight: 600;
     font-style: normal;
     line-height: 71px;
@@ -169,8 +166,10 @@ h1 {
 
 h2 {
     font-weight: 600;
-    font-size: 3.5rem;
-    line-height: 3.3rem;
+    font-size: calc(2rem + (18 * (100vw - 400px)/ 624));
+    line-height: 1.05;
+    letter-spacing: -.8px;
+    margin-bottom: 1rem
 }
 
 h3 {
@@ -186,12 +185,22 @@ h3 {
         font-size: 4.5rem;
         line-height: 4rem;
     }
-
 }
 
+.hero--copy {
+    font-size: 1.7rem;
+}
+
+.kids-promo-video iframe {
+    width: 100%;
+    min-height: 18rem;
+}
 
 .lead {
-    font-size: 21px;
+    line-height: 1.333;
+    letter-spacing: -.1px;
+    margin: 0 0 2rem 0;
+    font-size: calc(1.125rem + (2 * (100vw - 400px)/ 624));
 }
 
 .white-text {
@@ -221,7 +230,6 @@ h3 {
     border-radius: 500px;
     transition: color 0.5s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: transform 600ms ease-in-out;
-    margin: 10px;
 }
 
 .btn:hover {
@@ -270,6 +278,25 @@ h3 {
     background-color: var(--neutral-400);
     border: 2px solid var(--neutral-700);
     color: var(--neutral-900);
+}
+
+@media (max-width: 576px) {
+    .btn {
+        width: 100%;
+    }
+    .homepage--kids-promo {
+        text-align: center;
+    }
+}
+
+.homepage--kids-promo .row {
+    padding: 8rem 0 8rem 0;
+}
+
+@media (max-width: 576px) {
+    .homepage--kids-promo .row {
+        padding: 4rem 1rem 0 1rem;
+    }
 }
 
 #scrollToTopBtn {
@@ -443,6 +470,10 @@ p.schedule-time {
     border-top: 3px solid #FF1C3A;
 }
 
+#kids-intro {
+    height: 50vw;
+}
+
 #kids_groups {
     padding: 10vh 10px;
 }
@@ -490,9 +521,26 @@ p.schedule-time {
     width: 100%;
 }
 
-#team_intro {
-    background-color: #EDF2F8;
-    padding-top: 130px;
+.homepage--our-team {
+    padding-top: 4rem;
+}
+
+@media (max-width: 576px) {
+    .homepage--our-team {
+        padding: 4rem 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .homepage--kids-promo .container, .homepage--kids-promo .row {
+        padding:0;
+    }
+}
+
+@media (max-width: 576px) {
+    .cta--kids {
+        padding: 5rem 3rem 2rem 3rem !important;
+    }
 }
 
 .head-coach-photo {
@@ -550,6 +598,20 @@ p.schedule-time {
     min-width: 500px;
 }
 
+hr {
+    border: none;
+    border-top: 1px solid var(--neutral-700);
+    margin: 0;
+    margin: 2rem 0
+}
+
+.heading--top {
+    width: 10rem;
+    margin: 2rem auto;
+    opacity: 1;
+    border-top: 3px solid #FF1C3A;
+}
+
 .hr10 {
     width: 10rem;
     margin: auto;
@@ -580,24 +642,36 @@ p.schedule-time {
 }
 
 .group_photo {
-    margin-top: -140px;
+    margin-top: -5rem;
 }
 
 @media (max-width: 576px) {
     .group_photo {
         visibility: hidden;
     }
-
-}
-
-#about_us {
-    background-color: #EDF2F8;
 }
 
 #about-bjj {
     background-color: var(--neutral-900);
     color: var(--neutral-400);
-    padding: 20rem auto;
+    margin-top: -12rem;
+}
+
+.about-bjj--copy {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+@media (max-width: 576px) {
+    .about-bjj--copy {
+        padding: 3rem 2rem !important;
+    }
+
+    #about-bjj {
+        background-color: var(--neutral-900);
+        color: var(--neutral-400);
+        margin-top: 0;
+    }
 }
 
 #benefits {
@@ -943,7 +1017,6 @@ ul.technique-videos>ul {
     color: black;
 }
 
-
 .application-form-header {
     color: white;
     background-color: #123597;
@@ -957,7 +1030,6 @@ ul.technique-videos>ul {
 .application-form-intro {
     margin-bottom: 2rem;
 }
-
 
 .btn-close {
     background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;

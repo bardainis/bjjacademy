@@ -64,108 +64,106 @@
             <div class="container">
                 <div class="intro-txt__container">
                     <h1>Cīņas sporta klubs BJJ Academy Latvia</h1>
-                    <h3>Kvalitatīvi džiu džitsu treniņi kopš 2012. gada</h3>
+                    <p class="hero--copy my-3">Kvalitatīvi džiu džitsu treniņi kopš 2012. gada</p>
                 </div>
                 <div class="hero_buttons">
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop">
-                                Pieteikties treniņiem
-                            </button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Pieteikties treniņiem
+                    </button>
 
-                            <!-- Modal -->
-                            <div class="modal fade free-session" id="staticBackdrop" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
+                    <!-- Modal -->
+                    <div class="modal fade free-session" id="staticBackdrop" data-bs-backdrop="static"
+                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
 
-                                        <div class="modal-header">
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+
+                                    <section class="application-form-header">
+                                        <h2>Pieteikties bezmaksas treniņam</h2>
+                                        <p class="lead mb-5">Esat laipni aicināti atnākt un izmēģināt!</p>
+                                    </section>
+
+                                    <section class="application-form-content">
+                                        <div class="application-form-intro">
+                                            <h4>Kas jāzina, ierodoties uz pirmo treniņu?</h4>
+                                            <p>Līdzi jābūt: Šortiem vai sporta biksēm, t-kreklam,
+                                                čībām, dušas piederumiem.</p>
                                         </div>
+                                        <form>
+                                            <fieldset>
+                                                <label class="c-form__label" for="first_name">Vārds
+                                                    <span class="accent-red-txt">*</span>
+                                                </label>
+                                                <input class="c-form__input" required="" type="text" id="first_name"
+                                                    name="first_name" maxlength="80" autocomplete="given-name"
+                                                    placeholder="Jūsu vārds" data-value-missing="">
+                                            </fieldset>
 
-                                        <div class="modal-body">
-
-                                            <section class="application-form-header">
-                                                <h2>Pieteikties bezmaksas treniņam</h2>
-                                                <p class="lead mb-5">Esat laipni aicināti atnākt un izmēģināt!</p>
-                                            </section>
-
-                                            <section class="application-form-content">
-                                                <div class="application-form-intro">
-                                                    <h4>Kas jāzina, ierodoties uz pirmo treniņu?</h4>
-                                                    <p>Līdzi jābūt: Šortiem vai sporta biksēm, t-kreklam,
-                                                        čībām, dušas piederumiem.</p>
-                                                </div>
-                                                <form>
-                                                    <fieldset>
-                                                        <label class="c-form__label" for="first_name">Vārds
-                                                            <span class="accent-red-txt">*</span>
-                                                        </label>
-                                                        <input class="c-form__input" required="" type="text"
-                                                            id="first_name" name="first_name" maxlength="80"
-                                                            autocomplete="given-name" placeholder="Jūsu vārds"
-                                                            data-value-missing="">
-                                                    </fieldset>
-
-                                                    <fieldset>
-                                                        <label class="c-form__label" for="phone">Tālr. numurs
-                                                            <span class="accent-red-txt">*</span>
-                                                        </label>
-                                                        <input class="c-form__input" required="" type="tel" id="phone"
-                                                            name="phone" value="" autocomplete="phone"
-                                                            placeholder="+371 27778888"
-                                                            data-value-missing="Please let us know your phone number.">
-                                                    </fieldset>
+                                            <fieldset>
+                                                <label class="c-form__label" for="phone">Tālr. numurs
+                                                    <span class="accent-red-txt">*</span>
+                                                </label>
+                                                <input class="c-form__input" required="" type="tel" id="phone"
+                                                    name="phone" value="" autocomplete="phone"
+                                                    placeholder="+371 27778888"
+                                                    data-value-missing="Please let us know your phone number.">
+                                            </fieldset>
 
 
-                                                    <fieldset>
-                                                        <label class="c-form__label" for="class_option">Kuru grupu
-                                                            vēlaties izmēģināt?
-                                                            <span class="accent-red-txt">*</span>
-                                                        </label>
-                                                        <select class="c-form__select" required=""
-                                                            id="class_option" name="class_option"
-                                                            data-value-missing="Please select a department option.">
-                                                            <option disabled="" selected="" value="">Izvēlieties...
-                                                            </option>
-                                                            <option value="Basics">Basics (Otrdien, ceturtdien 18.30)
-                                                            </option>
-                                                            <option value="Advanced">Advanced Gi (Pirmdien, trešdien
-                                                                19.30)</option>
-                                                            <option value="Nogi">No Gi/Greplings (Otrdien, ceturtdien
-                                                                19:30)</option>
-                                                            <option value="Leglocks">Leglocks (pirmdien, trešdien,
-                                                                piektdien 8:30)</option>
-                                                        </select>
-                                                        <div class="c-form__inline-error u-margin-top--small u-margin-bottom--small hide"
-                                                            aria-live="polite"></div>
-                                                    </fieldset>
+                                            <fieldset>
+                                                <label class="c-form__label" for="class_option">Kuru grupu
+                                                    vēlaties izmēģināt?
+                                                    <span class="accent-red-txt">*</span>
+                                                </label>
+                                                <select class="c-form__select" required="" id="class_option"
+                                                    name="class_option"
+                                                    data-value-missing="Please select a department option.">
+                                                    <option disabled="" selected="" value="">Izvēlieties...
+                                                    </option>
+                                                    <option value="Basics">Basics (Otrdien, ceturtdien 18.30)
+                                                    </option>
+                                                    <option value="Advanced">Advanced Gi (Pirmdien, trešdien
+                                                        19.30)</option>
+                                                    <option value="Nogi">No Gi/Greplings (Otrdien, ceturtdien
+                                                        19:30)</option>
+                                                    <option value="Leglocks">Leglocks (pirmdien, trešdien,
+                                                        piektdien 8:30)</option>
+                                                </select>
+                                                <div class="c-form__inline-error u-margin-top--small u-margin-bottom--small hide"
+                                                    aria-live="polite"></div>
+                                            </fieldset>
 
-                                                    <hr class="v--padded">
+                                            <hr class="v--padded">
 
-                                                    <div class="c-form__container">
-                                                        <label class="c-form__label" for="comments">
-                                                            Vai ir kādi papiljautājumi? (pēc izvēles)
-                                                        </label>
-                                                        <textarea class="c-form__input" id="comments" name="comments"
-                                                            autocomplete="" maxlength="500" spellcheck="false">
+                                            <div class="c-form__container">
+                                                <label class="c-form__label" for="comments">
+                                                    Vai ir kādi papiljautājumi? (pēc izvēles)
+                                                </label>
+                                                <textarea class="c-form__input" id="comments" name="comments"
+                                                    autocomplete="" maxlength="500" spellcheck="false">
                                                         </textarea>
-                                                    </div>
+                                            </div>
 
-                                                    <div class="c-form__container my-4 ">
-                                                        <button type="submit" class="btn btn-primary w-100 mx-0">
-                                                            Pieteikties</button>
-                                                    </div>
-                                                </form>
+                                            <div class="c-form__container my-4 ">
+                                                <button type="submit" class="btn btn-primary w-100 mx-0">
+                                                    Pieteikties</button>
+                                            </div>
+                                        </form>
 
-                                            </section>
+                                    </section>
 
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
 
                     <a href="#about-bjj" class="btn btn-secondary" role="button">kas ir džiu džitsu?</a>
                 </div>
@@ -173,29 +171,35 @@
         </div>
     </section>
 
-
-    <section id="kids-intro" class="my-5">
+    <section class="homepage--kids-promo">
         <div class="container">
-            <div class="d-lg-flex flex-md-equal w-100 my-5">
-                <div class="descr-block bg-white p-3">
+            <div class="row">
+                <div class="col-md-6 py-3 mb-5 cta--kids">
                     <h2>Vai meklējat treniņus bērnam?</h2>
                     <p class="lead">Pašpārliecība, paškontrole, pašaizsardzība, koordinācija — vien daži iemesli,
                         kāpēc
                         džiu džitsu ir tik lieliski piemērots mūsdienu bērniem</p>
                     </p>
                     <a class="btn btn-secondary btn-dark" href="lv/berniem" role="button">Programmas bērniem</a>
-
                 </div>
-                <div class="kids-promo px-5 py-2 px-md-5"></div>
+                <div class="col-md-6 my-2">
+                    <div class="kids-promo-video embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_B-3kiJjedk"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <div class="container-fluid bg-light">
-        <section id="team_intro">
+
+
+    <section id="team_intro">
+        <div class="container-fluid bg-light homepage--our-team">
             <div class="text-center container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-8 mx-auto">
+                    <div class="col-lg-8 mx-auto">
+                        <hr class="heading--top">
                         <h2>Cīņas klubs The Academy Latvia</h2>
                         <p class="lead">Jau kopš 2012. gada piedāvājam kvalitatīvus un ikvienam pieejamus džiu džitsu
                             treniņus Rīgā galvenā trenera Jevgēņija Minajeva vadībā. Mūsu klubā šo gadu gaitā simtiem
@@ -207,31 +211,35 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="about_us">
-            <div class="text-center container">
-                <div class="row">
-                    <img data-aos="fade-down" class="logos_grouped" src="images/logos-grouped.svg">
-                    <div class="row group_photo">
-                        <img data-aos="slide-up" src="images/group-photo-edited.png" alt="The Academt Group Photo">
-                    </div>
+            <div class="row">
+                <img data-aos="fade-down" class="logos_grouped d-none d-sm-block" src="images/logos-grouped.svg">
+                <div class="row group_photo d-none d-sm-block">
+                    <img data-aos="slide-up" src="images/group-photo-edited.png" alt="The Academy Group Photo">
                 </div>
-        </section>
-    </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
 
     <section id="about-bjj">
         <div class="text-center container">
             <div class="row">
-                <div class="col-lg-8 py-5 mx-auto">
-                    <hr class="hr10 mt-5">
+                <div class="col-lg-8 mx-auto about-bjj--copy">
                     <h2 class="my-5">Kas ir brazīļu džiu džitsu?</h2>
-                    <p class="lead">Pašaizsardzības cīņas māksla un sporta veids, kas 20. gs. sākumā radās Brazīlijā kā
-                        japāņu džiu džitsu un džudo atzars, kas galveno uzmanību vērš uz cīņu parterī. Cīņas mērķis ir
+                    <p class="lead">Pašaizsardzības cīņas māksla un sporta veids, kas 20. gs. sākumā radās Brazīlijā
+                        kā
+                        japāņu džiu džitsu un džudo atzars, kas galveno uzmanību vērš uz cīņu parterī. Cīņas mērķis
+                        ir
                         dominēt pretinieku pozicionāli un panākt padošanos, pielietojot dažādus sāpju paņēmienus un
                         žņaudzienus.
-                        Cīņas mākslas kodolā ir pārliecība, ka mazāks un vājāks cilvēks ir spējīgs sevi aizstāvēt pret
-                        lielāku, spēcīgāku un smagāku pretinieku, izmantojot efektīvu tehniku. Šodien viens no straujāk
+                        Cīņas mākslas kodolā ir pārliecība, ka mazāks un vājāks cilvēks ir spējīgs sevi aizstāvēt
+                        pret
+                        lielāku, spēcīgāku un smagāku pretinieku, izmantojot efektīvu tehniku. Šodien viens no
+                        straujāk
                         augošajiem cīņas sporta veidiem visā pasaulē, ko var apgūt gan sporta, gan pašaizsardzības
                         nolūkos.</p>
                     </p>
@@ -316,7 +324,29 @@
         </div>
     </footer>
 
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v10.0'
+    });
+  };
 
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution="setup_tool"
+  page_id="242037329223415">
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js">
     </script>
