@@ -220,11 +220,6 @@
         </div>
     </section>
 
-
-
-
-
-
     <section id="about-bjj">
         <div class="text-center container">
             <div class="row">
@@ -248,17 +243,24 @@
         </div>
     </section>
 
-    <section id="benefits">
+    <div class="container-fluid bg-dark">
+        <div class="bg-dark col-md-8 mx-auto">
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/EYp1xYtlyqg" title="YouTube video" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
+    <section id="benefits">
+        <div class="container-fluid my-5 bg-dark">
+        
         <div class="col-lg-8 mx-auto text-center benefit_item">
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
             <h3 data-aos="fade-up">Lieliska fiziskā aktivitāte</h3>
             <p>Brazīļu džiu džitsu ir vispusīgs treniņš visam ķermenim, kas veiksmīgi attīsta koordināciju,
                 līdzsvaru un veiklību.</p>
         </div>
 
         <div class="col-lg-8 mx-auto text-center benefit_item">
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
             <h3 data-aos="fade-up">Pašaizsardzības prasmes</h3>
             <p>Cīņas mākslas saknes ir praktisks pielietojums pašaizsardzības situācijās. Jūs iemācīsieties,
                 piemēram, kā atbrīvoties no žņaugšanas satvēriena, kā izkļūt no pretinieka, kas nogāzis zemē un
@@ -266,7 +268,6 @@
         </div>
 
         <div class="col-lg-8 mx-auto text-center benefit_item">
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
             <h3 data-aos="fade-up">Pieejams ikvienam</h3>
             <p>Viena no unikālām īpašībām ir šīs cīņas mākslas pieejamība neatkarīgi no dzimuma, vecuma vai
                 sagatavotības. Ikviens var rast pozitīvu ieguvumu un atrast veidu, kā džiu džitsu iederas tieši
@@ -274,7 +275,6 @@
         </div>
 
         <div class="col-lg-8 mx-auto text-center benefit_item">
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
             <h3 data-aos="fade-up">Attīsta raksturu</h3>
             <p>Cīņa ir fiziska nodarbe, kas prasa pārvarēt un izaicināt sevi, paplašināt varēšanas robežas un
                 stāties pretī bailēm, tādējādi attīstot rakstura iezīmes, kas nepieciešamas arī ārpus cīņas
@@ -282,12 +282,12 @@
         </div>
 
         <div class="col-lg-8 mx-auto text-center benefit_item">
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
             <h3 data-aos="fade-up">Asina prātu</h3>
             <p>Brazīļu džiu džitsu pamatoti tiek dēvēts par cīņas šahu. Cīņa, protams, ir fiziski prasīga
                 nodarbe, tomēr šis sports ir ārkārtīgi tehnisks un taktisks, tāpēc prasa no sportista augsti
                 attīstītu taktisko domāšanu.</p>
             </p>
+        </div>
         </div>
     </section>
 
@@ -324,29 +324,27 @@
         </div>
     </footer>
 
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v10.0'
-    });
-  };
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
 
-  (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
-<!-- Your Chat Plugin code -->
-<div class="fb-customerchat"
-  attribution="setup_tool"
-  page_id="242037329223415">
-</div>
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="242037329223415">
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js">
     </script>
@@ -355,6 +353,8 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
 
 </body>
 

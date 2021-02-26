@@ -175,7 +175,7 @@ h2 {
 h3 {
     font-size: 40px;
     font-weight: 600;
-    line-height: 71px;
+    line-height: 1;
 }
 
 .caption {
@@ -383,6 +383,10 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.promo-video iframe {
+    width: 100%;
 }
 
 #timetable {
@@ -676,7 +680,13 @@ hr {
     padding: 45px 70px 28px 90px;
     color: white;
     border-bottom: 15px solid var(--neutral-900);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
+
+
 
 .kids-benefits-item {
     color: var(--neutral-400);
@@ -893,8 +903,8 @@ footer {
 
 .intro-copy {
     color: var(--neutral-500);
-    min-height:20rem;
-    padding-top:5rem;
+    min-height: 20rem;
+    padding-top: 5rem;
 }
 
 /* CURRICULUM */
