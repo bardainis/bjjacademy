@@ -861,9 +861,16 @@ footer {
     border-top: 2px solid var(--neutral-700)
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
     footer .col-sm {
         margin-bottom: 2rem;
+    }
+    footer {
+        padding: 1rem;
+    }
+    .follow-us ul {
+        padding: 0;
+        margin-top: 1rem;
     }
 }
 
