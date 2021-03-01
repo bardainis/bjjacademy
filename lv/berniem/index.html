@@ -69,11 +69,125 @@
                 </div>
                 <div class="hero_buttons">
                     <a href="#kids_groups" role="button" class="btn btn-primary my-2">Apskatīt grupas</a>
-                    <a role="button" class="btn btn-secondary">Bezmaksas treniņš</a>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-secondary m-0" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Bezmaksas treniņš
+                    </button>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade free-session" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <section class="application-form-header">
+                        <h2>Pieteikties bezmaksas bērnu treniņam</h2>
+                        <p class="lead mb-5">Esat laipni aicināti atnākt un izmēģināt!</p>
+                    </section>
+
+                    <section class="application-form-content">
+                        <div class="application-form-intro">
+                            <h4>Kas jāzina, ierodoties uz pirmo treniņu?</h4>
+                            <p>Līdzi jābūt: Šortiem vai sporta biksēm, t-kreklam,
+                                čībām, dušas piederumiem.</p>
+                        </div>
+                        <form>
+                            <fieldset>
+                                <label class="c-form__label" for="first_name">Bērna vārds, uzvārds
+                                    <span class="accent-red-txt">*</span>
+                                </label>
+                                <input class="c-form__input" required="" type="text" id="first_name" name="first_name"
+                                    maxlength="80" autocomplete="given-name" placeholder="Jūsu vārds"
+                                    data-value-missing="">
+                            </fieldset>
+
+                            <fieldset>
+                                <label class="c-form__label" for="class_option">Kuru grupu
+                                    vēlaties izmēģināt?
+                                    <span class="accent-red-txt">*</span>
+                                </label>
+                                <select class="c-form__select" required="" id="class-name" name="class-name"
+                                    data-value-missing="Izvēlieties treniņu grupu">
+                                    <option disabled="" selected="" value="">Izvēlieties...
+                                    </option>
+                                    <option value="Basics">Kids 4-7 gadi
+                                    </option>
+                                    <option value="Advanced">Kids 7-10 gadi</option>
+                                    <option value="Juniors">Kids 10-15 gadi</option>
+
+                                </select>
+                                <div class="c-form__inline-error u-margin-top--small u-margin-bottom--small hide"
+                                    aria-live="polite"></div>
+                            </fieldset>
+
+                            <fieldset>
+                                <label class="c-form__label" for="class_option">Bērna dzimšanas datums
+                                    <span class="accent-red-txt">*</span>
+                                </label>
+                                <div class="field-inline-block">
+                                    <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" />
+                                </div>
+                                /
+                                <div class="field-inline-block">
+                                    <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" />
+                                </div>
+                                /
+                                <div class="field-inline-block">
+                                    <input type="text" pattern="[0-9]*" maxlength="4" size="4"
+                                        class="date-field date-field--year" />
+                                </div>
+                                <p class="my-2"><small>Piem. 23/10/2008</small></p>
+                            </fieldset>
+
+                            <hr class="v--padded">
+
+                            <fieldset>
+                                <label class="c-form__label" for="first_name">Vecāka vārds
+                                    <span class="accent-red-txt">*</span>
+                                </label>
+                                <input class="c-form__input" required="" type="text" id="first_name" name="first_name"
+                                    maxlength="80" autocomplete="given-name" placeholder="Jūsu vārds"
+                                    data-value-missing="">
+                                <label class="c-form__label" for="phone">Vecāka tālr. numurs
+                                    <span class="accent-red-txt">*</span>
+                                </label>
+                                <input class="c-form__input" required="" type="tel" id="phone" name="phone" value=""
+                                    autocomplete="phone" placeholder="+371 27778888"
+                                    data-value-missing="Please let us know your phone number.">
+                            </fieldset>
+
+                            <div class="c-form__container">
+                                <label class="c-form__label" for="comments">
+                                    Vai ir kādi papiljautājumi? (pēc izvēles)
+                                </label>
+                                <textarea class="c-form__input" id="comments" name="comments" autocomplete=""
+                                    maxlength="500" spellcheck="false">
+                                                        </textarea>
+                            </div>
+
+                            <div class="c-form__container my-4 ">
+                                <button type="submit" class="btn btn-primary w-100 mx-0 ">
+                                    Pieteikties</button>
+                            </div>
+                        </form>
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -216,7 +330,11 @@
                 <div class="character-kids px-5 py-2 px-md-5"></div>
                 <div class="px-5 py-5 bg-neutral-900">
                     <h3>Raksturs</h3>
-                    <p>Disciplīna un rakstura īpašības, iespējams, ir biežākais iemesls, kādēļ vecāki atved savu bērnu uz cīņas treniņiem. Cīņas prasmes bez atbilstošām rakstura kvalitātēm ir nepareiza kombinācija, tāpēc mūsu treniņi izveidoti tā, lai līdzās fiziskām īpašībām bērnos attīstītos pacietība, savaldība, mērķtiecība un gribasspēks, kā arī cieņa pret līdzcilvēkiem (treneri, pretinieks, komandas biedri). 
+                    <p>Disciplīna un rakstura īpašības, iespējams, ir biežākais iemesls, kādēļ vecāki atved savu bērnu
+                        uz cīņas treniņiem. Cīņas prasmes bez atbilstošām rakstura kvalitātēm ir nepareiza kombinācija,
+                        tāpēc mūsu treniņi izveidoti tā, lai līdzās fiziskām īpašībām bērnos attīstītos pacietība,
+                        savaldība, mērķtiecība un gribasspēks, kā arī cieņa pret līdzcilvēkiem (treneri, pretinieks,
+                        komandas biedri).
                     </p>
                 </div>
             </div>
@@ -226,7 +344,10 @@
             <div class="d-md-flex flex-md-equal w-100 mb-5">
                 <div class="px-5 py-5 bg-accent">
                     <h3>Draugi</h3>
-                    <p>Treniņi, cīņa, nometnes un sacensības ir bērnus vienojoša pieredze visai dzīvei. Draudzības, kas dzimušas cīņas zālē, ir kas īpašs un vienojošs. Arī tad, ja visi grupas bērni nekļūst par draugiem, mūsu treneri strādā, lai nodrošinātu tādu treniņu vidi, kurā bērni viens otru ciena un spēj darboties komandā.
+                    <p>Treniņi, cīņa, nometnes un sacensības ir bērnus vienojoša pieredze visai dzīvei. Draudzības, kas
+                        dzimušas cīņas zālē, ir kas īpašs un vienojošs. Arī tad, ja visi grupas bērni nekļūst par
+                        draugiem, mūsu treneri strādā, lai nodrošinātu tādu treniņu vidi, kurā bērni viens otru ciena un
+                        spēj darboties komandā.
                     </p>
                 </div>
                 <div class="friends-kids px-5 py-2 px-md-5"></div>
@@ -268,29 +389,27 @@
         </div>
     </footer>
 
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v10.0'
-    });
-  };
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
 
-  (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
-<!-- Your Chat Plugin code -->
-<div class="fb-customerchat"
-  attribution="setup_tool"
-  page_id="242037329223415">
-</div>
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="242037329223415">
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js">
     </script>
