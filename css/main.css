@@ -403,6 +403,13 @@ h3 {
     margin: 0;
 }
 
+.weekday h4 {
+    color: var(--neutral-400);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
 .leglocks {
     border-bottom: 10px solid #777;
 }
