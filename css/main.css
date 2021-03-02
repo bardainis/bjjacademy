@@ -1109,3 +1109,8 @@ li.no-video:before {
     letter-spacing: .2px;
     font-size: .875rem
 }
+
+#map {
+    height: 400px;
+    width: 100%;
+  }
