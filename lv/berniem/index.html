@@ -100,13 +100,14 @@
                         <div class="application-form-intro">
                             <h4>Kas jāzina, ierodoties uz pirmo treniņu?</h4>
                             <p>Līdzi jābūt: Šortiem vai sporta biksēm, t-kreklam,
-                                čībām, dušas piederumiem.</p>
+                                čībām, dušas piederumiem, ūdenim.</p>
                         </div>
                         <form>
                             <fieldset>
                                 <label class="c-form__label" for="first_name">Bērna vārds, uzvārds
                                     <span class="accent-red-txt">*</span>
                                 </label>
+                                
                                 <input class="c-form__input" required="" type="text" id="first_name" name="first_name"
                                     maxlength="80" autocomplete="given-name" placeholder="Jūsu vārds"
                                     data-value-missing="">
@@ -135,17 +136,18 @@
                                 <label class="c-form__label" for="class_option">Bērna dzimšanas datums
                                     <span class="accent-red-txt">*</span>
                                 </label>
+
                                 <div class="field-inline-block">
-                                    <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" />
+                                    <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="c-form__input" />
                                 </div>
                                 /
                                 <div class="field-inline-block">
-                                    <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" />
+                                    <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="c-form__input" />
                                 </div>
                                 /
                                 <div class="field-inline-block">
                                     <input type="text" pattern="[0-9]*" maxlength="4" size="4"
-                                        class="date-field date-field--year" />
+                                        class="c-form__input" />
                                 </div>
                                 <p class="my-2"><small>Piem. 23/10/2008</small></p>
                             </fieldset>
