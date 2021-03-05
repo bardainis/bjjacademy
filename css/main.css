@@ -778,6 +778,14 @@ p.times-preview {
     min-height: 27rem;
 }
 
+.location-block {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-image: url(../images/academy-location-1.jpg);
+    min-height: 432px;
+}
+
 .bg-nogi-classes {
     background-repeat: no-repeat;
     background-size: cover;
@@ -829,6 +837,10 @@ p.times-preview {
     background-position: left;
     background-image: url(../images/kids-benefits-friends.jpg);
     min-height: 20rem;
+}
+
+.contacts {
+    color: var(--neutral-400);
 }
 
 .character-kids {
@@ -1114,3 +1126,8 @@ li.no-video:before {
     height: 400px;
     width: 100%;
   }
+
+
+.gym-location {
+    background-image: url(../images/academy-location-1.jpg);
+}
