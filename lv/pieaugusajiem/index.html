@@ -120,99 +120,95 @@
                                 Pieteikties
                             </button>
 
-                            <!-- Modal -->
-                            <div class="modal fade free-session" id="staticBackdrop" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
+                    <!-- Modal -->
+                    <div class="modal fade free-session" id="staticBackdrop" data-bs-backdrop="static"
+                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
 
-                                        <div class="modal-header">
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+
+                                    <section class="application-form-header">
+                                        <h2>Pieteikties bezmaksas treniņam</h2>
+                                        <p class="lead mb-5">Esat laipni aicināti atnākt un izmēģināt!</p>
+                                    </section>
+
+                                    <section class="application-form-content">
+                                        <div class="application-form-intro">
+                                            <h4>Kas jāzina, ierodoties uz pirmo treniņu?</h4>
+                                            <p>Līdzi jābūt: Šortiem vai sporta biksēm, t-kreklam,
+                                                čībām, dušas piederumiem.</p>
                                         </div>
+                                        <form>
+                                            <fieldset>
+                                                <label class="c-form__label" for="first_name">Vārds
+                                                    <span class="accent-red-txt">*</span>
+                                                </label>
+                                                <input class="c-form__input" required="" type="text" id="first_name"
+                                                    name="first_name" maxlength="80" autocomplete="given-name"
+                                                    placeholder="Jūsu vārds" data-value-missing="">
+                                            </fieldset>
 
-                                        <div class="modal-body">
-
-                                            <section class="application-form-header">
-                                                <h2>Pieteikties bezmaksas treniņam</h2>
-                                                <p class="lead mb-5">Esat laipni aicināti atnākt un izmēģināt!</p>
-                                            </section>
-
-                                            <section class="application-form-content">
-                                                <div class="application-form-intro">
-                                                    <h4>Kas jāzina, ierodoties uz pirmo treniņu?</h4>
-                                                    <p>Līdzi jābūt: Šortiem vai sporta biksēm, t-kreklam,
-                                                        čībām, dušas piederumiem.</p>
-                                                </div>
-                                                <form>
-                                                    <fieldset>
-                                                        <label class="c-form__label" for="first_name">Vārds
-                                                            <span class="accent-red-txt">*</span>
-                                                        </label>
-                                                        <input class="c-form__input" required="" type="text"
-                                                            id="first_name" name="first_name" maxlength="80"
-                                                            autocomplete="given-name" placeholder="Jūsu vārds"
-                                                            data-value-missing="">
-                                                    </fieldset>
-
-                                                    <fieldset>
-                                                        <label class="c-form__label" for="phone">Tālr. numurs
-                                                            <span class="accent-red-txt">*</span>
-                                                        </label>
-                                                        <input class="c-form__input" required="" type="tel" id="phone"
-                                                            name="phone" value="" autocomplete="phone"
-                                                            placeholder="+371 27778888"
-                                                            data-value-missing="Please let us know your phone number.">
-                                                    </fieldset>
+                                            <fieldset>
+                                                <label class="c-form__label" for="phone">Tālr. numurs
+                                                    <span class="accent-red-txt">*</span>
+                                                </label>
+                                                <input class="c-form__input" required="" type="tel" id="phone"
+                                                    name="phone" value="" autocomplete="phone"
+                                                    placeholder="+371 27778888"
+                                                    data-value-missing="Please let us know your phone number.">
+                                            </fieldset>
 
 
-                                                    <fieldset>
-                                                        <label class="c-form__label" for="class_option">Kuru grupu
-                                                            vēlaties izmēģināt?
-                                                            <span class="accent-red-txt">*</span>
-                                                        </label>
-                                                        <select class="c-form__select" required=""
-                                                            id="department_option" name="department_option"
-                                                            data-value-missing="Please select a department option.">
-                                                            <option disabled="" selected="" value="">Izvēlieties...
-                                                            </option>
-                                                            <option value="Basics">Basics (Otrdien, ceturtdien 18.30)
-                                                            </option>
-                                                            <option value="Advanced">Advanced Gi (Pirmdien, trešdien
-                                                                19.30)</option>
-                                                            <option value="Nogi">No Gi/Greplings (Otrdien, ceturtdien
-                                                                19:30)</option>
-                                                            <option value="Leglocks">Leglocks (pirmdien, trešdien,
-                                                                piektdien 8:30)</option>
-                                                        </select>
-                                                        <div class="c-form__inline-error u-margin-top--small u-margin-bottom--small hide"
-                                                            aria-live="polite"></div>
-                                                    </fieldset>
+                                            <fieldset>
+                                                <label class="c-form__label" for="class_option">Kuru grupu
+                                                    vēlaties izmēģināt?
+                                                    <span class="accent-red-txt">*</span>
+                                                </label>
+                                                <select class="c-form__select" required="" id="class_option"
+                                                    name="class_option"
+                                                    data-value-missing="Lūdzu, norādiet treniņu grupu">
+                                                    <option disabled="" selected="" value="">Izvēlieties...
+                                                    </option>
+                                                    <option value="Basics">Basics (Otrdien, ceturtdien 18.30)
+                                                    </option>
+                                                    <option value="Advanced">Advanced Gi (Pirmdien, trešdien
+                                                        19.30)</option>
+                                                    <option value="Nogi">No Gi/Greplings (Otrdien, ceturtdien
+                                                        19:30)</option>
+                                                    <option value="Leglocks">Leglocks (pirmdien, trešdien,
+                                                        piektdien 8:30)</option>
+                                                </select>
+                                                <div class="c-form__inline-error u-margin-top--small u-margin-bottom--small hide"
+                                                    aria-live="polite"></div>
+                                            </fieldset>
 
-                                                    <hr class="v--padded">
+                                            <hr class="v--padded">
 
-                                                    <div class="c-form__container">
-                                                        <label class="c-form__label" for="comments">
-                                                            Vai ir kādi papiljautājumi? (pēc izvēles)
-                                                        </label>
-                                                        <textarea class="c-form__input" id="comments" name="comments"
-                                                            autocomplete="" maxlength="500" spellcheck="false">
-                                                        </textarea>
-                                                    </div>
+                                            <div class="c-form__container">
+                                                <label class="c-form__label" for="comments">
+                                                    Vai ir kādi papiljautājumi? (pēc izvēles)
+                                                </label>
+                                                <textarea class="c-form__input" id="comments" name="comments" maxlength="500" spellcheck="false"></textarea>
+                                            </div>
 
-                                                    <div class="c-form__container my-4 ">
-                                                        <button type="submit" class="btn btn-primary w-100 mx-0 ">
-                                                            Pieteikties</button>
-                                                    </div>
-                                                </form>
+                                            <div class="c-form__container my-4">
+                                                <button type="submit" class="btn btn-primary w-100 mx-0">
+                                                    Pieteikties</button>
+                                            </div>
+                                        </form>
 
-                                            </section>
+                                    </section>
 
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
 
                             <a href="programma/" class="btn btn-secondary btn-dark mx-0"
                                 role="button">Apskatīt programmu</a>

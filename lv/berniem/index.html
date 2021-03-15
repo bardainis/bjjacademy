@@ -122,10 +122,10 @@
                                     data-value-missing="Izvēlieties treniņu grupu">
                                     <option disabled="" selected="" value="">Izvēlieties...
                                     </option>
-                                    <option value="Basics">Kids 4-7 gadi
+                                    <option value="4-7">Kids 4-7 gadi
                                     </option>
-                                    <option value="Advanced">Kids 7-10 gadi</option>
-                                    <option value="Juniors">Kids 10-15 gadi</option>
+                                    <option value="7-10">Kids 7-10 gadi</option>
+                                    <option value="10-15">Kids 10-15 gadi</option>
 
                                 </select>
                                 <div class="c-form__inline-error u-margin-top--small u-margin-bottom--small hide"
@@ -133,21 +133,25 @@
                             </fieldset>
 
                             <fieldset>
+
+                             
+
+
                                 <label class="c-form__label" for="class_option">Bērna dzimšanas datums
                                     <span class="accent-red-txt">*</span>
                                 </label>
 
                                 <div class="field-inline-block">
-                                    <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="c-form__input" />
+                                    <input class="c-form__input" type="text" id="birth_day" name="birth_day" pattern="[0-9]*" maxlength="2" size="2" />
+                                </div>
+                                /
+
+                                <div class="field-inline-block">
+                                    <input class="c-form__input" type="text" id="birth_month" name="birth_month" pattern="[0-9]*" maxlength="2" size="2" />
                                 </div>
                                 /
                                 <div class="field-inline-block">
-                                    <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="c-form__input" />
-                                </div>
-                                /
-                                <div class="field-inline-block">
-                                    <input type="text" pattern="[0-9]*" maxlength="4" size="4"
-                                        class="c-form__input" />
+                                    <input class="c-form__input" type="text" id="birth_year" name="birth_year" pattern="[0-9]*" maxlength="4" size="4" />
                                 </div>
                                 <p class="my-2"><small>Piem. 23/10/2008</small></p>
                             </fieldset>
@@ -155,27 +159,25 @@
                             <hr class="v--padded">
 
                             <fieldset>
-                                <label class="c-form__label" for="first_name">Vecāka vārds
+                                <label class="c-form__label" for="parents_name">Vecāka vārds
                                     <span class="accent-red-txt">*</span>
                                 </label>
-                                <input class="c-form__input" required="" type="text" id="first_name" name="first_name"
+                                <input class="c-form__input" required="" type="text" id="parents_name" name="parents_name"
                                     maxlength="80" autocomplete="given-name" placeholder="Jūsu vārds"
                                     data-value-missing="">
-                                <label class="c-form__label" for="phone">Vecāka tālr. numurs
+                                <label class="c-form__label" for="parents_phone">Vecāka tālr. numurs
                                     <span class="accent-red-txt">*</span>
                                 </label>
-                                <input class="c-form__input" required="" type="tel" id="phone" name="phone" value=""
+                                <input class="c-form__input" required="" type="tel" id="parents_phone" name="parents_phone" value=""
                                     autocomplete="phone" placeholder="+371 27778888"
-                                    data-value-missing="Please let us know your phone number.">
+                                    data-value-missing="Lūdzu, norādiet savu tālruņa numuru.">
                             </fieldset>
 
                             <div class="c-form__container">
                                 <label class="c-form__label" for="comments">
                                     Vai ir kādi papiljautājumi? (pēc izvēles)
                                 </label>
-                                <textarea class="c-form__input" id="comments" name="comments" autocomplete=""
-                                    maxlength="500" spellcheck="false">
-                                                        </textarea>
+                                <textarea class="c-form__input" id="comments" name="comments" autocomplete="" maxlength="500" spellcheck="false"></textarea>
                             </div>
 
                             <div class="c-form__container my-4 ">
