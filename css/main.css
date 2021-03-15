@@ -781,9 +781,18 @@ p.times-preview {
 .location-block {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
+    background-position: right bottom;
     background-image: url(../images/academy-location-1.jpg);
-    min-height: 432px;
+    min-height: 350px;
+}
+
+.location-block-2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-image: url(../images/academy-location-2.jpg);
+    min-height: 600px;
+ 
 }
 
 .bg-nogi-classes {
