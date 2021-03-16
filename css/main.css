@@ -791,6 +791,14 @@ p.times-preview {
     min-height: 27rem;
 }
 
+.bg-private-classes {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/privates.JPG);
+    min-height: 27rem;
+}
+
 .location-block {
     background-repeat: no-repeat;
     background-size: cover;
