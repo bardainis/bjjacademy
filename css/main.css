@@ -410,6 +410,10 @@ h3 {
     letter-spacing: .1em;
 }
 
+.descr-block h4 {
+    margin-top: 1.3em;
+}
+
 .leglocks {
     border-bottom: 10px solid #777;
 }
@@ -746,6 +750,15 @@ p.times-preview {
     text-align: left;
 }
 
+.descr-block ul {
+    list-style-type: none;
+    margin: .5em 0;
+    padding: 0;
+}
+
+
+
+
 .description_block_benefits {
     text-align: left;
     padding: 4rem 50px;
@@ -1033,6 +1046,8 @@ li.no-video:before {
     margin: 0;
 }
 
+
+
 .intro-copy .lead {
     color: var(--neutral-600);
     margin-bottom: 8rem;
@@ -1139,4 +1154,20 @@ li.no-video:before {
 
 .gym-location {
     background-image: url(../images/academy-location-1.jpg);
+}
+
+.privates_benefits li { 
+    padding: .1em 0;
+}
+
+ul.privates_benefits li:before { 
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 1em;
+    height: 1em;
+    top: 3px;
+    margin-right: .6em;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='rgb(132, 134, 139)' class='bi bi-check2-circle' viewBox='0 0 16 16'%3E%3Cpath d='M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z'/%3E%3Cpath d='M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z'/%3E%3C/svg%3E");    
+    background-repeat: no-repeat;
 }
