@@ -9,8 +9,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/aos.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/zqy4asz.css">
     <title>The Academy Latvia</title>
 </head>
@@ -18,7 +18,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a href="#"><img data-aos="zoom-out" class="logo" src="images/logo-main-dark.svg"
+            <a href="#"><img data-aos="zoom-out" class="logo" src="../images/logo-main-dark.svg"
                     alt="The Academy Latvia"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -30,29 +30,29 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Treniņu programmas
+                            Программы тренировок
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="lv/pieaugusajiem">Pieaugušajiem</a></li>
-                            <li><a class="dropdown-item" href="lv/berniem">Bērniem</a></li>
+                            <li><a class="dropdown-item" href="pieaugusajiem">Для взрослых</a></li>
+                            <li><a class="dropdown-item" href="berniem">Для детей</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ru/grafiks/">Grafiks</a>
+                        <a class="nav-link" href="grafiks/">График</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ru/treneri">Treneri</a>
+                        <a class="nav-link" href="treneri">Тренера</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="ru/kontakti">Kontakti</a>
+                        <a class="nav-link" href="kontakti">Контакты</a>
                     </li>
                 </ul>
                 <form class="d-flex justify-content-center language_selection">
                     <ul>
-                        <li><a href="lv">LV</a></li>
-                        <li class="active"><a href="ru">RU</a></li>
-                        <li><a href="en">EN</a></li>
+                        <li><a href="../index.html">LV</a></li>
+                        <li class="active"><a href="index.html">RU</a></li>
+                        <li><a href="../en/index.html">EN</a></li>
                     </ul>
                 </form>
             </div>
@@ -63,14 +63,14 @@
         <div class="container-fluid hero hero-home">
             <div class="container">
                 <div class="intro-txt__container">
-                    <h1>Cīņas sporta klubs BJJ Academy Latvia</h1>
-                    <p class="hero--copy my-3">Kvalitatīvi džiu džitsu treniņi kopš 2012. gada</p>
+                    <h1>Спортивный клуб борьбы BJJ Academy Latvia</h1>
+                    <p class="hero--copy my-3">Качественные тренировки по джиу-джитсу с 2012 года</p>
                 </div>
                 <div class="hero_buttons">
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop">
-                        Pieteikties treniņiem
+                        Записаться на тренировки
                     </button>
 
                     <!-- Modal -->
@@ -87,15 +87,15 @@
                                 <div class="modal-body">
 
                                     <section class="application-form-header">
-                                        <h2>Pieteikties bezmaksas treniņam</h2>
-                                        <p class="lead mb-5">Esat laipni aicināti atnākt un izmēģināt!</p>
+                                        <h2>Записаться на бесплатную тренировку</h2>
+                                        <p class="lead mb-5">Вы можете прийти и попробовать!</p>
                                     </section>
 
                                     <section class="application-form-content">
                                         <div class="application-form-intro">
-                                            <h4>Kas jāzina, ierodoties uz pirmo treniņu?</h4>
-                                            <p>Līdzi jābūt: Šortiem vai sporta biksēm, t-kreklam,
-                                                čībām, dušas piederumiem.</p>
+                                            <h4>Что мне нужно знать, когда я приеду на свою первую тренировку??</h4>
+                                            <p>С собой необходимы: Шорты или спортивные брюки, футболка,
+                                                тапочки, аксессуары для душа.</p>
                                         </div>
                                         <form>
                                             <fieldset>
@@ -128,14 +128,15 @@
                                                     data-value-missing="Lūdzu, norādiet treniņu grupu">
                                                     <option disabled="" selected="" value="">Izvēlieties...
                                                     </option>
-                                                    <option value="Basics">Basics (Otrdien, ceturtdien 18.30)
+                                                    <option value="Basics">Basics (Вторник, Четверг 18.30)
                                                     </option>
-                                                    <option value="Advanced">Advanced Gi (Pirmdien, trešdien
+                                                    <option value="Advanced">Advanced Gi (понедельник, среда,
+                                                        пятница
                                                         19.30)</option>
-                                                    <option value="Nogi">No Gi/Greplings (Otrdien, ceturtdien
+                                                    <option value="Nogi">No Gi/Греплинг (Вторник, Четверг
                                                         19:30)</option>
-                                                    <option value="Leglocks">Leglocks (pirmdien, trešdien,
-                                                        piektdien 8:30)</option>
+                                                    <option value="Leglocks">Leglocks (понедельник, среда,
+                                                        пятница 8:00)</option>
                                                 </select>
                                                 <div class="c-form__inline-error u-margin-top--small u-margin-bottom--small hide"
                                                     aria-live="polite"></div>
@@ -145,14 +146,14 @@
 
                                             <div class="c-form__container">
                                                 <label class="c-form__label" for="comments">
-                                                    Vai ir kādi papiljautājumi? (pēc izvēles)
+                                                    Есть вопросы?
                                                 </label>
                                                 <textarea class="c-form__input" id="comments" name="comments" maxlength="500" spellcheck="false"></textarea>
                                             </div>
 
                                             <div class="c-form__container my-4">
                                                 <button type="submit" class="btn btn-primary w-100 mx-0">
-                                                    Pieteikties</button>
+                                                    Записаться</button>
                                             </div>
                                         </form>
 
@@ -173,12 +174,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 py-3 mb-5 cta--kids">
-                    <h2>Vai meklējat treniņus bērnam?</h2>
-                    <p class="lead">Pašpārliecība, paškontrole, pašaizsardzība, koordinācija — vien daži iemesli,
-                        kāpēc
-                        džiu džitsu ir tik lieliski piemērots mūsdienu bērniem</p>
+                    <h2>Ищете тренировки для вашего ребенка?</h2>
+                    <p class="lead">Настойчивость, самоконтроль, самооборона, координация – всего несколько причин,
+                        почему Джиу-джитсу так отлично подходит для сегодняшних детей</p>
                     </p>
-                    <a class="btn btn-secondary btn-dark" href="lv/berniem" role="button">Programmas bērniem</a>
+                    <a class="btn btn-secondary btn-dark" href="berniem" role="button">Детские программы</a>
                 </div>
                 <div class="col-lg-6 my-2">
                     <div class="kids-promo-video embed-responsive embed-responsive-16by9">
@@ -198,7 +198,7 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <hr class="heading--top">
-                        <h2>Cīņas klubs The Academy Latvia</h2>
+                        <h2>Школа борьбы The Academy Latvia</h2>
                         <p class="lead">Jau kopš 2012. gada piedāvājam kvalitatīvus un ikvienam pieejamus džiu džitsu
                             treniņus Rīgā galvenā trenera Jevgēņija Minajeva vadībā. Mūsu klubā šo gadu gaitā simtiem
                             cilvēku bijusi iespēja saņemt pozitīvos ieguvumus, ko sniedz džiu džitsu gan fiziski, gan
@@ -222,7 +222,7 @@
         <div class="text-center container">
             <div class="row">
                 <div class="col-lg-8 mx-auto about-bjj--copy">
-                    <h2 class="my-5">Kas ir brazīļu džiu džitsu?</h2>
+                    <h2 class="my-5">Что такое бразильское джиу-джитсу?</h2>
                     <p class="lead">Pašaizsardzības cīņas māksla un sporta veids, kas 20. gs. sākumā radās Brazīlijā
                         kā
                         japāņu džiu džitsu un džudo atzars, kas galveno uzmanību vērš uz cīņu parterī. Cīņas mērķis
@@ -253,34 +253,34 @@
         <div class="container-fluid my-5 bg-dark">
 
             <div class="col-lg-8 mx-auto text-center benefit_item">
-                <h3 data-aos="fade-up">Lieliska fiziskā aktivitāte</h3>
-                <p>Brazīļu džiu džitsu ir vispusīgs treniņš visam ķermenim, kas veiksmīgi attīsta koordināciju,
-                    līdzsvaru un veiklību.</p>
+                <h3 data-aos="fade-up">Отличная физическая активность</h3>
+                <p>Бразильское джиу-джитсу является комплексной тренировкой для всего тела, которая успешно развивает координацию,
+                    баланс и ловкость.</p>
             </div>
 
             <div class="col-lg-8 mx-auto text-center benefit_item">
-                <h3 data-aos="fade-up">Pašaizsardzības prasmes</h3>
+                <h3 data-aos="fade-up">Навыки самообороны</h3>
                 <p>Cīņas mākslas saknes ir praktisks pielietojums pašaizsardzības situācijās. Jūs iemācīsieties,
                     piemēram, kā atbrīvoties no žņaugšanas satvēriena, kā izkļūt no pretinieka, kas nogāzis zemē un
                     sēž virsū, kā arī no daudzām citām bīstamām situācijām.</p>
             </div>
 
             <div class="col-lg-8 mx-auto text-center benefit_item">
-                <h3 data-aos="fade-up">Pieejams ikvienam</h3>
+                <h3 data-aos="fade-up">Доступно для всех</h3>
                 <p>Viena no unikālām īpašībām ir šīs cīņas mākslas pieejamība neatkarīgi no dzimuma, vecuma vai
                     sagatavotības. Ikviens var rast pozitīvu ieguvumu un atrast veidu, kā džiu džitsu iederas tieši
                     Jūsu dzīvē.</p>
             </div>
 
             <div class="col-lg-8 mx-auto text-center benefit_item">
-                <h3 data-aos="fade-up">Attīsta raksturu</h3>
+                <h3 data-aos="fade-up">Развивает характер</h3>
                 <p>Cīņa ir fiziska nodarbe, kas prasa pārvarēt un izaicināt sevi, paplašināt varēšanas robežas un
                     stāties pretī bailēm, tādējādi attīstot rakstura iezīmes, kas nepieciešamas arī ārpus cīņas
                     paklāja.</p>
             </div>
 
             <div class="col-lg-8 mx-auto text-center benefit_item">
-                <h3 data-aos="fade-up">Asina prātu</h3>
+                <h3 data-aos="fade-up">Развивает мышление</h3>
                 <p>Brazīļu džiu džitsu pamatoti tiek dēvēts par cīņas šahu. Cīņa, protams, ir fiziski prasīga
                     nodarbe, tomēr šis sports ir ārkārtīgi tehnisks un taktisks, tāpēc prasa no sportista augsti
                     attīstītu taktisko domāšanu.</p>
@@ -293,7 +293,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <h6>Kontakti</h6>
+                    <h6>Контакты</h6>
                     <a href="https://goo.gl/maps/WQCmEnukPEJQqPvt7">Braslas iela 29 (Ieeja H), Rīga</a><br>
                     <a href="mailto:minaj002@gmail.com">minaj002@gmail.com</a><br>
                     <a href="tel:0037127616064">27616064</a><br>
