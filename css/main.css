@@ -577,14 +577,6 @@ p.schedule-time {
     min-height: 18rem;
 }
 
-.coach-sergejs-photo {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    background-image: url(../images/coach-sergejs.jpg);
-    min-height: 27rem;
-}
-
 .coach-valera-photo {
     background-repeat: no-repeat;
     background-size: cover;
