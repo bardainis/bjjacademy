@@ -561,28 +561,12 @@ p.schedule-time {
     margin-top: -3rem;
 }
 
-.coach-dainis-photo {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    background-image: url(../images/coach-dainis.jpg);
-    min-height: 27rem;
-}
-
 .kids-promo {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-image: url(../images/video-placeholder.jpg);
     min-height: 18rem;
-}
-
-.coach-valera-photo {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    background-image: url(../images/coach-valera.jpg);
-    min-height: 27rem;
 }
 
 .gmaps {
